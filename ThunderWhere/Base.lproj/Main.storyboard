@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Flash View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FlashViewController" customModule="ThunderWhere" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzl-yf-rh1">
+                                <rect key="frame" x="124" y="273" width="126" height="120"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="PushedFlashButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OdJ-eM-FHw"/>
+                                    <segue destination="LtS-3z-yUk" kind="presentation" id="Ovn-7C-lR4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pzl-yf-rh1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bzF-n0-rpi"/>
+                            <constraint firstItem="pzl-yf-rh1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="253" id="dNp-e8-wpY"/>
+                            <constraint firstItem="pzl-yf-rh1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="n0x-8l-rF6"/>
+                            <constraint firstItem="pzl-yf-rh1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zN8-no-C6E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+        <!--Clap View Controller-->
+        <scene sceneID="BwX-YL-JTs">
+            <objects>
+                <viewController id="LtS-3z-yUk" customClass="ClapViewController" customModule="ThunderWhere" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FUR-gv-OAK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVd-UH-SD5">
+                                <rect key="frame" x="124" y="273" width="126" height="120"/>
+                                <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="PushedClapButton:" destination="LtS-3z-yUk" eventType="touchUpInside" id="Lsw-qF-1Hn"/>
+                                    <segue destination="cUa-go-gBG" kind="presentation" id="VHb-7Y-gjx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GVd-UH-SD5" firstAttribute="centerY" secondItem="FUR-gv-OAK" secondAttribute="centerY" id="DBf-ph-pDM"/>
+                            <constraint firstItem="GVd-UH-SD5" firstAttribute="top" secondItem="Knm-0r-lAL" secondAttribute="top" constant="253" id="JFq-bx-jAu"/>
+                            <constraint firstItem="GVd-UH-SD5" firstAttribute="leading" secondItem="Knm-0r-lAL" secondAttribute="leading" constant="124" id="erV-RU-bhg"/>
+                            <constraint firstItem="GVd-UH-SD5" firstAttribute="centerX" secondItem="FUR-gv-OAK" secondAttribute="centerX" id="yHl-1f-tsn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Knm-0r-lAL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zww-Rb-Bzy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924" y="117"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="7kc-Qa-LiC">
+            <objects>
+                <viewController id="cUa-go-gBG" customClass="ResultViewController" customModule="ThunderWhere" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Mc-Ae-GEt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4X-5g-grr">
+                                <rect key="frame" x="108" y="283" width="158" height="100"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K4X-5g-grr" firstAttribute="leading" secondItem="2SJ-cL-mC7" secondAttribute="leading" constant="108" id="GvZ-0H-TR4"/>
+                            <constraint firstItem="K4X-5g-grr" firstAttribute="centerY" secondItem="6Mc-Ae-GEt" secondAttribute="centerY" id="WJM-og-7r4"/>
+                            <constraint firstItem="K4X-5g-grr" firstAttribute="centerX" secondItem="6Mc-Ae-GEt" secondAttribute="centerX" id="iJn-BV-hwl"/>
+                            <constraint firstItem="K4X-5g-grr" firstAttribute="top" secondItem="2SJ-cL-mC7" secondAttribute="top" constant="263" id="xiL-5D-SoF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2SJ-cL-mC7"/>
+                    </view>
+                    <connections>
+                        <outlet property="distanceThunder" destination="K4X-5g-grr" id="B3A-yZ-Req"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U7j-Uu-O2G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1732" y="116.49175412293854"/>
+        </scene>
+    </scenes>
+</document>
